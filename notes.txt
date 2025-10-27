@@ -1,0 +1,70 @@
+ Video 1
+-__________________________________________
+
+- Sequntial Execution: Typically CPU executes code serially, One instruction after another 
+
+- Concurrancey: Multiple processes can happen at once, the order matters. and sometimes tasks have to wait for shared recources
+
+- Parrlelism: Everything happens at the same time 
+
+- "Performance is the currency of computing" 
+
+- Basiclly in concurrency your sharing recources in parrlelism you have seprate recources working together 
+
+- A big part of concurancy is processes competing for recources 
+
+- TimeSharring: When each process gets a designated amout of time to perform a task 
+
+- Core: A independet worker of CPU capable of running code 
+
+- Moores Law: Gordon Moore predicted the number of transistors would double every 18-24 months 
+
+- Transistor: A microscopic electrocomponent that sends signals on a cpu 
+
+- Transistors are getting so small, chips are being made on the atomic level 
+
+- We concurancy and multiple smaller cores to avoid overheating 
+
+- Dennard Scaling: 
+
+
+ Video 2
+-__________________________________________
+
+- Thread: A lightwait process. A thread allows you to execute two control flows concurrantly
+    > Each thread shares same code, data and kernal context
+    > Thread has it's own stack and TID 
+
+- Main Thread: The main point of execution
+
+- ContextSwitch: When OS stops running a thread, takes a snapshot, and loads the new thread and rins it 
+
+- Most common case of threads is on the GPU which can have 100's to 1000's of threads that are good for massively para;;e; tasls
+
+- Abort corr dump: When the main thread exits before child threads finisn. Use .join() to tell main thread to wait
+
+- thread::join: Blocks currant thread until identified thread finishes 
+
+
+ Video 3
+-__________________________________________
+
+- Passing lambda to thread 
+
+
+ Video 3
+-__________________________________________
+
+-  Using vec to store threads 
+
+
+ Video 4
+-__________________________________________
+
+- Each thread has a unique id
+
+
+ Video 5
+-__________________________________________
+
+- jthread: 
