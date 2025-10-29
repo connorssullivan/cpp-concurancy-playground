@@ -67,4 +67,21 @@
  Video 5
 -__________________________________________
 
-- jthread: 
+- jthread: Calls destructor autimatically if out of scope (Helps avoid crashes)
+
+- Use this for compiling, clang does not have jthread: ++-15 -std=c++20 -pthread thread1.cpp -o main
+
+ Video 6
+-__________________________________________
+
+- Race Condition: Based off the order threads access data, you get a non-determenistic result
+
+- Mutex (Mutual Exclusion): Used to ensure only one thread gets access to a critical section at a time 
+
+- Atomic Section: A critical section of code 
+
+
+ Video 7
+-__________________________________________
+
+- Deadlock: Lock is necer returned, and no threads are able to make progress, because they cant aquire recources 
