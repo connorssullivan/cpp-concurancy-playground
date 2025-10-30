@@ -85,3 +85,20 @@
 -__________________________________________
 
 - Deadlock: Lock is necer returned, and no threads are able to make progress, because they cant aquire recources 
+
+- lock_guard: A mutex wrapper that will make sure mutex is unlocked even if exception is thrown
+
+ Video 8
+-__________________________________________
+
+- Atomics Operation: An operation where you don't want an interweiving of read and writes to cause issues 
+
+- We have to be a little carefull when using atomics and just use ++ or +=
+
+- Atomics can work with custom types aswell, but. te requirment is it must just be a collection of bits
+
+
+ Video 9
+-__________________________________________
+
+- 

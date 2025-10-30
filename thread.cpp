@@ -9,6 +9,7 @@ static int shared_var = 0;
 
 void test(int num)
 {
+    //std::scoped_lock<std::mutex> lockGuard(lock); //You can used this to autimatically release lock
     lock.lock();
         std::cout << num << " Is p2's parameter \n";
         shared_var++;
